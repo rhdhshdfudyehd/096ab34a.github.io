@@ -180,12 +180,5 @@
     }
   });
 
-  $('._tg_url').click(function (){
-      $(this).attr('href', 'https://t.me/cherry_john');
-      gtag('event', 'conversion', {
-          'send_to': 'AW-11523307576/JTOCCNGx954aELjw3vYq',
-          'value': 1.0,
-          'currency': 'USD'
-      });
-  });
+  $('._tg_url').attr('href', 'https://t.me/cherry_john');
 })(jQuery);
