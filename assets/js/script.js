@@ -1,56 +1,8 @@
-(function ($) {
-  "use strict";
+(function ($) {"use strict";
   function fullHeight() {
     $('.full-height').css("height", $(window).height());
   }
-
-  // Type Effect
-  if ($('.typed-effect').length) {
-    $('.typed-effect').each(function () {
-      var typedStrings = $(this).data('strings');
-      var typedTag = $(this).attr('id');
-      var typed = new Typed('#' + typedTag, {
-        typeSpeed: 100,
-        backSpeed: 100,
-        fadeOut: true,
-        loop: true,
-        strings: typedStrings.split(',')
-      });
-    });
-  }
-
-  if ($(".testimonial-two__carousel").length) {
-    $(".testimonial-two__carousel").owlCarousel({
-      loop: true,
-      margin: 30,
-      nav: true,
-      dots: false,
-      smartSpeed: 500,
-      autoplay: true,
-      autoplayTimeout: 7000,
-      navText: [
-        '<span class="icon-left-arrow"></span>',
-        '<span class="icon-right-arrow"></span>',
-      ],
-      responsive: {
-        0: {
-          items: 1,
-        },
-        768: {
-          items: 1,
-        },
-        992: {
-          items: 1,
-        },
-        1200: {
-          items: 1,
-        },
-        1320: {
-          items: 1,
-        },
-      },
-    });
-  }
+               
   // Accrodion
   if ($(".accrodion-grp").length) {
     var accrodionGrp = $(".accrodion-grp");
